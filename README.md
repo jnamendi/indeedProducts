@@ -11,6 +11,9 @@ operations on a collection of products.
 
 Clone the git repository from https://github.com/jnamendi/indeedProducts master branch, this project uses java 17. Your IDE should automatically recognize the maven setup.
 
+### REST API Documentation ###
+This application uses OpenAPI library to show the documentation related to REST APIs, to view it go to http://localhost:8080/swagger-ui/index.html
+
 ### Solution explanation ###
 
 * #### Data Source

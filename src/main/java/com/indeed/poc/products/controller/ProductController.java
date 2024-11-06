@@ -36,7 +36,7 @@ public class ProductController {
                     content = @Content)
     })
     @GetMapping("/filter/price/{initial_range}/{final_range}")
-    public ResponseEntity<List<Product>> getAllEmployees(@PathVariable Integer initial_range,@PathVariable Integer final_range){
+    public ResponseEntity<List<Product>> getProductsByPrice(@PathVariable Integer initial_range,@PathVariable Integer final_range){
         return ResponseEntity.ok().body(productService.getProductsByPrice(initial_range, final_range));
     }
 

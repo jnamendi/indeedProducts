@@ -21,7 +21,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler({ Exception.class })
     public ResponseEntity<Object> handleException(Exception ex, WebRequest request) throws Exception {
-
+        log(ex);
         if (ex instanceof HttpMessageNotReadableException) {
             return new ResponseEntity<>("Json input could not be parsed", HttpStatus.BAD_REQUEST);
         } else if (ex instanceof MissingPathVariableException) {
